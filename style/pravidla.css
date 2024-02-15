@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  color: var(--cierna); 
+}
+.sekcia0-ponadpis{
+  display: inline-block; 
+  font-size: 40px;
+  font-weight: 700;
+
+}
+.zmensenie{
+  height: 700px;
+}
+@media (max-width:650px){
+  .zmensenie{
+    height: 300px;
+  }
+}
+.pravidla {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+.nav-item a:hover{
+  color: var(--cierna);
+}
+.kartaPravidla {
+  margin-top: 100px;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 45%;   
+}
+.kartaPravidla::before {
+  border-radius: 26px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#57e0ff, #EE49FD);
+}
+.kartaPravidla::after {
+  border-radius: 26px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#57e0ff, #EE49FD);
+  filter: blur(30px);
+}
+.kartaPravidla b {
+  border-radius: 20px;
+  position: absolute;
+  inset: 5px;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+.help{
+  width: 100px;
+}
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
+}
+.textP {
+    padding: 20px 30px;
+    position: relative;
+    z-index: 2;
+    color: var(--biela);
+} 
+@media screen and (max-width: 600px) {
+   .right{
+    left: 0;
+   }
+    .kartaPravidla {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+}
