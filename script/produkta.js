@@ -16,7 +16,7 @@ function addDataToHTML(){
             newProduct.innerHTML = 
             `<div class="product-button">
             <button class="add-bag-btn" onclick="addCart(${product.id})">Pridať do košíka</button>
-            <button> <a href="checkout.php" class="add-wishlist-btn">Košík</a></button>
+            <button> <a href="checkout.html" class="add-wishlist-btn">Košík</a></button>
             </div>`;
             listProductHTML.appendChild(newProduct);
         });
