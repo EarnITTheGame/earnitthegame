@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesprávny kód</title>
+</head>
+<body>
 <?php
 $predvolenyKod = "XK83LE52DER";
 $zadanyKod = $_POST["kod"];
@@ -9,7 +17,8 @@ if ($zadanyKod === $predvolenyKod)
 else 
 {
     echo "
-    <style>.tlacitkodomov {
+    <style>
+.tlacitkodomov {
         padding: 10px 100px;
         margin: 10px;
         margin-top:20px;
@@ -38,9 +47,11 @@ else
         <section style='display: grid; align-items: center; justify-content: center; height: 100vh; width: 100%; margin: 0; background-color: black;'>
         <p style='font-size: 50px; margin: 10px; font-weight: 700; text-shadow:2px 2px 2px #8950dd; color: white; '>
         Zadali ste Nesprávny kód! </p>
-        <button class='tlacitkodomov'><a href='produkt.php' style='text-decoration: none; color: white;'>Späť</a></button>
+        <button class='tlacitkodomov'><a href='produkt.html' style='text-decoration: none; color: white;'>Späť</a></button>
     </section>
     </body>
     ";
 }
 ?>
+</body>
+</html>
